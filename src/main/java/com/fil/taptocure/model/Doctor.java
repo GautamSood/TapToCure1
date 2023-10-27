@@ -55,7 +55,7 @@ public class Doctor {
     private String shiftStartEnd;
 
     @Column(name = "address")
-    private String Address;
+    private String address;
 
     @OneToMany(mappedBy = "doctor",fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
     private List<Appointment> appointments;

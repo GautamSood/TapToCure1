@@ -17,7 +17,7 @@ public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="admin_id")
-    private long adminID;
+    private long adminId;
 
     @Column(name="admin_email")
     @Email(message = "Not a valid email")

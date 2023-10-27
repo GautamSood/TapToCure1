@@ -18,7 +18,7 @@ public class MedicalRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="medicalrecord_id")
-    private long medicalRecordID;
+    private long medicalRecordId;
 
     @Column(name="medicalrecord_date")
     private Date medicalRecordDate;

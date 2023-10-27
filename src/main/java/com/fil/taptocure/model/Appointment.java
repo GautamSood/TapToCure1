@@ -26,7 +26,7 @@ public class Appointment {
     @NotEmpty(message = "Date for appointment is required")
     @NotBlank(message = "Date for appointment is required")
     @NotNull(message = "Date for appointment is required")
-    private LocalDate Date;
+    private LocalDate date;
 
     @Column(name="health_problem")
     @NotEmpty(message = "Description of health problem required")
