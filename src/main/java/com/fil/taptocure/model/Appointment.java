@@ -43,12 +43,12 @@ public class Appointment {
     private String appointmentStatus;
 
     @ManyToOne(fetch = FetchType.LAZY,cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
-    @JsonBackReference
+//    @JsonBackReference
     @JoinColumn(name="doctor_id")
     private Doctor doctor;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JsonBackReference
+//    @JsonBackReference
     @JoinColumn(name = "patient_id")
     private Patient patient;
 

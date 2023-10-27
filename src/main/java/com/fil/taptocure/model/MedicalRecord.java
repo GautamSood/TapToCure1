@@ -39,12 +39,12 @@ public class MedicalRecord {
 
     @ManyToOne(fetch = FetchType.LAZY,cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
     @JoinColumn(name="doctor_id")
-    @JsonBackReference
+//    @JsonBackReference
     private Doctor doctor;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "patient_id")
-    @JsonBackReference
+//    @JsonBackReference
     private Patient patient;
 
 }

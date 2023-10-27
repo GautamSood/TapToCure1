@@ -34,6 +34,6 @@ public class Department {
     private String description;
 
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonManagedReference
+//    @JsonManagedReference
     private List<Doctor> doctors ;
 }

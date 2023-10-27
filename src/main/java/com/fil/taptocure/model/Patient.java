@@ -67,11 +67,11 @@ public class Patient {
     private int patientAge;
 
     @OneToMany(mappedBy = "patient",fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
-    @JsonManagedReference
+//    @JsonManagedReference
     private List<Appointment> appointments;
 
     @OneToMany(mappedBy = "patient",fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
-    @JsonManagedReference
+//    @JsonManagedReference
     private List<MedicalRecord> medicalRecords;
 
 }

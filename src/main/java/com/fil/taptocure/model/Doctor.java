@@ -61,12 +61,12 @@ public class Doctor {
     private List<Appointment> appointments;
 
     @OneToMany(mappedBy = "doctor",fetch = FetchType.LAZY,cascade ={CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
-    @JsonManagedReference
+//    @JsonManagedReference
     private List<MedicalRecord> medicalRecords;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "department_id")
-    @JsonBackReference
+//    @JsonBackReference
     private Department department;
 
 }
