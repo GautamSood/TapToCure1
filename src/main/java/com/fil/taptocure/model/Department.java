@@ -22,15 +22,15 @@ public class Department {
     private long departmentId;
 
     @Column(name = "department_name")
-    @NotBlank(message = "department name is required")
-    @NotNull(message = "department name is required")
-    @NotEmpty(message = "department name is required")
+//    @NotBlank(message = "department name is required")
+//    @NotNull(message = "department name is required")
+//    @NotEmpty(message = "department name is required")
     private String departmentName;
 
     @Column(name = "description")
-    @NotBlank(message = "description is required")
-    @NotNull(message = "description is required")
-    @NotEmpty(message = "description is required")
+//    @NotBlank(message = "description is required")
+//    @NotNull(message = "description is required")
+//    @NotEmpty(message = "description is required")
     private String description;
 
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)

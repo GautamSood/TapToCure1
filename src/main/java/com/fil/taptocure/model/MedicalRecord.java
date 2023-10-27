@@ -24,17 +24,17 @@ public class MedicalRecord {
     private Date medicalRecordDate;
 
     @Column(name="medicalrecord_diagnosis")
-    @NotEmpty(message = "Medical Record diagnosis required")
-    @NotNull(message = "Medical Record diagnosis required")
-    @NotBlank(message = "Medical Record diagnosis required")
-    @Size(max=1800,message = "Maximum length of medical record diagnosis exceeded")
+//    @NotEmpty(message = "Medical Record diagnosis required")
+//    @NotNull(message = "Medical Record diagnosis required")
+//    @NotBlank(message = "Medical Record diagnosis required")
+//    @Size(max=1800,message = "Maximum length of medical record diagnosis exceeded")
     private String medicalRecordDiagnosis;
 
     @Column(name="medicalrecord_drugs")
-    @NotEmpty(message = "Medical Record drugs required")
-    @NotNull(message = "Medical Record drugs required")
-    @NotBlank(message = "Medical Record drugs required")
-    @Size(max=700,message = "Maximum length of medical record drugs exceeded")
+//    @NotEmpty(message = "Medical Record drugs required")
+//    @NotNull(message = "Medical Record drugs required")
+//    @NotBlank(message = "Medical Record drugs required")
+//    @Size(max=700,message = "Maximum length of medical record drugs exceeded")
     private String medicalRecordDrugs;
 
     @ManyToOne(fetch = FetchType.LAZY,cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
