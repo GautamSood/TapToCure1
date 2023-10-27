@@ -23,6 +23,7 @@ public class Appointment {
     private long appointmentId;
 
     @Column(name = "date")
+
 //    @NotEmpty(message = "Date for appointment is required")
 //    @NotBlank(message = "Date for appointment is required")
 //    @NotNull(message = "Date for appointment is required")
